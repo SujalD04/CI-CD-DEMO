@@ -6,6 +6,7 @@ router.get('/ping', (req, res) => {
 });
 
 router.get('/error', (req, res) => {
+    res.json({ message: 'Something broke gng 💔 '});
   throw new Error('Something broke!');
 });
 
